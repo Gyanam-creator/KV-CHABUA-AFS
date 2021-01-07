@@ -13,8 +13,8 @@ image {
     font-size: 30px;
 }
 
-#footer {
-    background-color: firebrick;
+#foter {
+    background-color: black;
     
 }
 #iframe_trans
@@ -82,5 +82,74 @@ image {
 }
 .environment_li p
 {
-    margin-top: 10px;
+    margin-top: 10px}
+
+#navbar {
+  overflow: hidden;
+    background-color: #333;}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+    }
+
+.content {
+  padding: 16px;
+    }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+#footer 
+{
+    height: 20px;
+    background-color: white;
+}
+
+#color_change
+{
+    color: greenyellow;
+}
+
+nav.shift ul li a {
+  position:relative;
+  z-index: 1;
+}
+nav.shift ul li a:hover {
+  color: #91640F;
+}
+nav.shift ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: grey;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+nav.shift ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+
